@@ -11,7 +11,7 @@ const message2 = 'i\'m a boy.';
 const message3 = 'My name is ${name}';
 console.log(message3)
 
-// 어렵다...
+// 어렵다......
 
 
 

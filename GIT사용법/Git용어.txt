@@ -1,28 +1,40 @@
-git init            //해당 폴더에 git 생성  
-git config --list            //git의 설정을 출력  
-git config --global user.name "Woohyun Park"        //사용자이름을 Woohyun Park으로 설정  
-git config --global user.email "woohyunpark.mail@gmail.com"        //이메일을 woohyunpark.mail@gmail.com로 설정  
-git config --global --unset-all a.b        //a.b를 unset  
-git remote add origin 주소        //주소로 원격저장소 연결  
-git remote set-url origin 주소        //주소로 원격저장소 수정
+git init                                                                  //해당 폴더에 git 생성  
+git config --list                                                         //git의 설정을 출력  
+git config --global user.name "Woohyun Park"                              //사용자이름을 Woohyun Park으로 설정  
+git config --global user.email "woohyunpark.mail@gmail.com"               //이메일을 woohyunpark.mail@gmail.com로 설정  
 
-git log        //git의 log를 확인  
-git add .        //stage에 모든 파일 등록  
-git status        //stage에 들어있는 파일 확인  
-git commit -m "A"        //A라는 이름으로 commit  
-git commit --amend -m "A"        //A라는 이름으로 마지막 커밋 메세지를 변경
+git config --global --unset-all a.b                                       //a.b를 unset  
+git remote add origin 주소                                                //주소로 원격저장소 연결  
+git remote set-url origin 주소                                            //주소로 원격저장소 수정
 
-git reset --hard abc123        //abc123의 상태로 git을 되돌림. 이전 기록은 삭제.
+--------------------------------------------------------------------------------------------------------------------------
 
-git branch        //branch 목록을 확인  
-git branch A        //A라는 이름의 branch를 생성  
-git branch -d A        //A라는 이름의 branch 삭제  
-git checkout A        //A로 브랜치 전환  
-git merge A        //A라는 브랜치를 현재 브랜치로 병합  
-git merge --abort        //병합 시도를 취소
+git log                                                                   //git의 log를 확인  
+git add .                                                                 //stage에 모든 파일 등록  
+git status                                                                //stage에 들어있는 파일 확인  
 
-git push origin master        //master의 내용을 origin으로 push  
-git push -f origin master        //master의 내용을 origin으로 force해서 push  
-git pull origin master        //origin의 내용을 master로 복사  
-git clone 주소        //주소의 내용을 현재 폴더로 복사  
-git fetch --all        //origin의 내용으로 로컬 파일을 덮어쓴다.
+git commit -m "A"                                                         //A라는 이름으로 commit  
+git commit --amend -m "A"                                                 //A라는 이름으로 마지막 커밋 메세지를 변경
+
+--------------------------------------------------------------------------------------------------------------------------
+
+git reset --hard abc123                                                   //abc123의 상태로 git을 되돌림. 이전 기록은 삭제.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+git branch                                                                //branch 목록을 확인  
+git branch A                                                              //A라는 이름의 branch를 생성  
+git branch -d A                                                           //A라는 이름의 branch 삭제  
+
+git checkout A                                                            //A로 브랜치 전환  
+git merge A                                                               //A라는 브랜치를 현재 브랜치로 병합  
+git merge --abort                                                         //병합 시도를 취소
+
+--------------------------------------------------------------------------------------------------------------------------
+
+git push origin master                                                    //master의 내용을 origin으로 push  
+git push -f origin master                                                 //master의 내용을 origin으로 force해서 push  
+
+git pull origin master                                                    //origin의 내용을 master로 복사  
+git clone 주소                                                            //주소의 내용을 현재 폴더로 복사  
+git fetch --all                                                           //origin의 내용으로 로컬 파일을 덮어쓴다.

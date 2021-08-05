@@ -1,0 +1,55 @@
+#root {
+  overflow-x: hidden;
+}
+
+#home {
+  height: 100vh;
+  display: flex;
+  color: white;
+  padding: 0px;
+  background-color: black;
+}
+
+#home #home-bg {
+  background: url(./images/bg_img/home-bgimg.jpg) center center/cover;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+#home .box {
+  z-index: 1;
+}
+
+#home .box .text {
+  font-size: 4vw;
+  line-height: 4vw;
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+
+#about img {
+  border-radius: 50%;
+}
+
+#about .content-wrap .content {
+  margin-top: 40px;
+  font-size: 18pt;
+  padding: 0px 20px;
+  line-height: 1.5;
+}
+
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: red;
+}

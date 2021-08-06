@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&amp;family=Raleway&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/common.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/85af176bb0.js" crossorigin="anonymous"></script>
     <title>김현용 - 백엔드 개발자</title>
 </head>
 <body>
     <div id="root">
+        <div id="nav">
+            <div class="mw-1200 box">
+                <i class="fas fa-bar mob-menu" aria-hidden="true"></i>
+                <ul class="after">
+                    <li class="dest" dest="home">Home</li>
+                    <li class="dest" dest="about">About</li>
+                    <li class="dest" dest="skill">Skill</li>
+                    <li class="dest" dest="project">Project</li>
+                    <li class="dest" dest="contact">Contact</li>
+                </ul>
+            </div>
+        </div>
         <section id="home" class="flex">
             <div id="home-bg"></div>
             <div class="flex box">
                 <div class="text">포트폴리오 따라해보기</div>
                 <a href="http://jwkil.com/" title="길재우 - Django 개발자" target="_blank">따라한 사이트 바로가기</a>
             </div>
+            <svg preserveAspectRatio="none" viewBox="0 0 100 200" version="1.1" xmlns="http://www.w3.org/2000/svg" class="dest-about down-arrow" dest="about">
+                <path d="M0 0 L50 100 L100 0 L80 0 L50 60 L20 0 Z" fill="white" stroke="white">
+                </path>
+            </svg>
         </section>
         <section id="about">
             <div class="container flex mw-1200">
@@ -33,6 +53,168 @@
                 </div>
             </div>
         </section>
-    </div>    
+        <section id="skill">
+            <div class="container flex mw-1200">
+                <div class="header">Skills</div>
+                <div class="header-bar"></div>
+                <div class="box flex">
+                    <div class="flex w-100">
+                        <p class="type">Backend</p>
+                        <div class="w-100">
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/python.svg">
+                                <div class="tag">Python</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/django.svg">
+                                <div class="tag">Django</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/mysql.svg">
+                                <div class="tag">MySQL</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/pandas_w25LLGx.svg">
+                                <div class="tag">Pandas</div>
+                                <div class="level flex">Tried</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-100">
+                        <p class="type">DevOps</p>
+                        <div class="w-100">
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/amazonaws.svg">
+                                <div class="tag">AWS</div>
+                                <div class="level flex">Tried</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/ubuntu.svg">
+                                <div class="tag">ubuntu</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/github.svg">
+                                <div class="tag">Github</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex w-100">
+                        <p class="type">Frontend</p>
+                        <div class="w-100">
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/css3.svg">
+                                <div class="tag">CSS</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/html5.svg">
+                                <div class="tag">HTML</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/javascript.svg">
+                                <div class="tag">Javascript</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/jquery.svg">
+                                <div class="tag">JQuery</div>
+                                <div class="level flex">Familiar</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/vue-dot-js.svg">
+                                <div class="tag">Vue.js</div>
+                                <div class="level flex">Tried</div>
+                            </div>
+                            <div class="skill-wrap flex">
+                                <img src="http://jwkil.com/uploads/skill/react.svg">
+                                <div class="tag">React</div>
+                                <div class="level flex">Tried</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <div class="container flex mw-1200">
+                <div class="header">Projects</div>
+                <div class="header-bar"></div>
+                <div class="box">
+                    <div class="project-wrap">
+                        <img class="thumbnail" src="http://jwkil.com/uploads/dcjeil.png">
+                        <div class="desc"><div class="title">덕천제일교회</div>
+                        <div class="skills">Django/CSS/HTML/JQuery</div>
+                    </div>
+                    <div class="more">More</div>
+                    <div class="link">
+                        <a href="http://www.dcjeil.net/" target="_blank">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/wodn5515/dcjeil" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-wrap">
+                    <img class="thumbnail" src="http://jwkil.com/uploads/bnpk_znLzaiI.png">
+                    <div class="desc">
+                        <div class="title">롤 밴픽사이트</div>
+                        <div class="skills">Django/Vue.js</div>
+                    </div>
+                    <div class="more">More</div>
+                    <div class="link">
+                        <a href="https://bnpk.kr/" target="_blank">
+                            <i class="fas fa-home" aria-hidden="true"></i>
+                        </a>
+                        <a href="https://github.com/wodn5515/banpick" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-wrap">
+                    <img class="thumbnail" src="http://jwkil.com/uploads/lol-api.PNG">
+                    <div class="desc">
+                        <div class="title">롤 데이터분석</div>
+                        <div class="skills">Python/Pandas</div>
+                    </div>
+                    <div class="more">More</div>
+                    <div class="link">
+                        <a href="https://github.com/wodn5515/lol-api" target="_blank">
+                            <i class="fab fa-github" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section id="contact">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 100" height="100" width="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0 L 50 100 L 100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
+            </svg>
+            <div class="container flex mw-1200">
+                <div class="header">Contact</div>
+                <div class="header-bar"></div>
+                <div class="content-wrap">
+                    <a href="https://github.com/HyunCoding" target="_blank">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <h1>E-mail : aa01080809571@gmail.com</h1>
+                </div>
+            </div>
+        </section>
+        <section id="footer">
+            <i class="fas fa-chevron-up to-top flex top dest" dest="home" aria-hidden="true"></i>
+            <div class="container flex">
+                <p>Copyright ⓒ 2020 <em>JWKIL</em> All Rights Reserved.</p>
+            </div>
+        </section>
+    </div>
+    <script src="../main.js"></script>    
 </body>
 </html>

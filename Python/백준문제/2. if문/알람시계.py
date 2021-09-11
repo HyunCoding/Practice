@@ -28,7 +28,8 @@ else:
 2)
 h, m=map(int, input().split())
 print((h-(m < 45)) % 24, (m-45) % 60)
-
+# (m-45) % 60 = 59
+# 음수를 양수로 나눴을때 나머지 이해가 잘안됨ㅜㅜ
 
 3)
 H, M=map(int, input().split())

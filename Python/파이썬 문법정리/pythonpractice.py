@@ -55,3 +55,5 @@
 #     print("{:.3f}%".format(count/arr[0]*100))
 # # 참고사항
 # # https://ming-jee.tistory.com/124
+
+1

@@ -1,3 +1,5 @@
+#백준 2884
+
 h, m = map(int, input().split())
 if h != 0:
     if m < 45:

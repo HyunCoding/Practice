@@ -1,15 +1,10 @@
-X = int(input())
+# exec(int(input()) * "p, *l=map(int, input().split())
+#      print(f'{sum(p*i>sum(l)for i in l)/p:.3%}')
+#      ")
 
-line = 1
-while X > line:
-    X -= line
-    line += 1
-
-if line % 2 == 0:
-    a = X
-    b = line-X+1
-else:
-    a = line-X+1
-    b = X
-
-print(a, '/', b, sep='')
+for T in range(int(input())):
+    n, *L = map(int, input().split())
+print(n)
+print(L)
+s = sum(L)/n
+print('%.3f%%' % (sum(i > s for i in L)*100/n))
